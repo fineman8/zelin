@@ -1,0 +1,9 @@
+from hashlib import md5
+md=md5()
+md.update(password)#将password存入md
+md.update(encode(password,'utf8'))
+#解码decode(str,'utf8')把str按utf8格式进行解码
+#编码encode(str,'utf8')把str编成utf8
+password2=md.hexdigest()#取值
+user=User()
+
