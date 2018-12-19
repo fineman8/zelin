@@ -1,0 +1,7 @@
+Error: That port is already in use
+首先查看已存在端口号列表:
+$ps aux|grep -i manage
+然后只需运行
+$ kill -9 <pid>
+删除进程（第二列）
+---------------------------------
