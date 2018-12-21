@@ -7,3 +7,7 @@ md.update(password.encode('utf8'))
 password2=md.hexdigest()#取值
 user=User()
 
+model转sql语句
+kst.query.__str__()  
+
+
