@@ -32,7 +32,21 @@
       response.read()
       response.read().decode('utf-8')#响应体
       
+      msg/version/reason/
+      
+      
+      urllib 禁止重定向
+      headers={
+        'Referer':
+        'User-Agent':
+      }
+      data=bytes(parse.urlencode(d),encoding='utf-8')
+       request1=request.Request('http://...',headers=headers,data=data,method='POST')
+       print(response.read().decode('utf-8'))
+       response=request.urlopen(request1)
        
+       
+       request.add_header('Useagent','nidaye')#更改添加请求头信息
        
        
        
