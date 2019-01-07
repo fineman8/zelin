@@ -1,4 +1,10 @@
 1.annacondan
 2.pymongo
 3.mongodb
-4.可视化
+4.可视化  robot D3
+5.urlib库
+  1.request 请求
+  2.error 异常处理
+  3.parse url编码，中文转url
+  4.robotparser 检查网站是否符合这种方式，一般用不到
+  
