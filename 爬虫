@@ -1,4 +1,4 @@
-1.annacondan
+1.annacondan  jupyter notebook --generate-config查看jupyter工作目录
 2.pymongo
 3.mongodb
 4.可视化  robot D3
@@ -53,4 +53,28 @@
        proxy_handler=ProxyHandler({'https':http://...:9999#端口号})
 
       ------------------------------------------------------------
+      urllib error
+      1.urlerror
+      
+      2.httperror协议异常
+        urlerror子类
+        
+        try:
+          
+        except error.Httperror as e:
+          print(e.reason, e.code, e.headers,sep='\n')
+        except errpr.URLerror as e:
+          print(e.reason)
+          
+          http可以捕获的异常url也可以，相反就不行
+          
+          
+   -----------------------------------------------
+   wd='人工智能'
+   parse.quote(wd)
+   #直接转码
+   url='https://www.baidu.com/s?wd='+parse.quote(wd)#拼接
+    parse.unquote('编码') 
+    
+    
       
