@@ -1,0 +1,54 @@
+1.pip install requests
+
+import requests
+r=requests.get(url='')
+r=requests.post(url='.../post')
+print(r)
+
+2.params参数
+
+r=requests.get(url='www.baidu.com/s',params={'wd':'人工智能'})
+print(r.url)#打印出拼接后的url
+
+3.获取图片，禁止重定向
+r=requests.get(url=url,allow_redirects=False,headers=headers)
+print(r.text)
+#加referers到请求头
+
+r.status_code
+302重定向
+
+
+4.获取响应信息
+import requests
+r=requests.get('')
+r.url
+r.text#获取响应体，str形式
+r.content#获取二进制流
+#图片从二进制转化为text时会乱码
+
+.text有乱码的话手动解码
+先.content.decode('utf-8')
+
+r.encoding#查看r是什么编码
+
+
+5.响应属性信息
+r.status_code#状态码
+r.headers#响应头
+r.cookies#
+r.url#
+r.history#
+
+
+requests.code.ok#状态码200
+
+
+6.json解码器
+import request
+import json
+r=request.get('')
+print(json.loads(r.text),type(json.loads(r.text)))
+print(r.json(),type(r.json))
+
+7.headers
