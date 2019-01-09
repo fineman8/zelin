@@ -15,11 +15,37 @@ content='qweqweq'
 result=re.match(r'正则表达式',cotent)
 print(result.group())
 print(result.span())
-2.匹配目标
-r=re.match(r'Hello\s(\d+)\s',content)
-r.group
 
-2.通用匹配
+2.匹配目标#用括号扩起来
+r=re.match(r'Hello\s(\d+)\s',content)
+r.group(1)
+
+3.通用匹配
 result=re.match(r'H.*(\d{7})\s',content)
 .*匹配所有 贪婪模式
-.*? 非贪婪
+.*? 非贪婪 尽可能少地匹配
+
+字符串中间：非贪婪
+字符串结尾：贪婪模式
+
+4.修饰符
+result1=re.match('正则',content,re.S)
+print(result1.group())
+re.S#使.*可以匹配所有符号，包括换行
+re.I#使匹配队大小写部敏感
+
+
+5.转义匹配
+re.match(r'\(百度\)')
+\w 匹配非特殊字符，即a-z、A-Z、0-9、_、汉字
+
+
+代码	功能
+.	匹配任意1个字符（除了\n）
+[ ]	匹配[ ]中列举的字符
+\d	匹配数字，即0-9
+\D	匹配非数字，即不是数字
+\s	匹配空白，即 空格，tab键
+\S	匹配非空白
+\w	匹配非特殊字符，即a-z、A-Z、0-9、_、汉字
+\W	匹配特殊字符，即非字母、非数字、非汉字、非_
