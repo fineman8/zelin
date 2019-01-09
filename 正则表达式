@@ -9,3 +9,17 @@ $结尾
 |或者
 
 python正则库re(自带的)
+1.match
+import re 
+content='qweqweq'
+result=re.match(r'正则表达式',cotent)
+print(result.group())
+print(result.span())
+2.匹配目标
+r=re.match(r'Hello\s(\d+)\s',content)
+r.group
+
+2.通用匹配
+result=re.match(r'H.*(\d{7})\s',content)
+.*匹配所有 贪婪模式
+.*? 非贪婪
