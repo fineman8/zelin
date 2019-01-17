@@ -55,3 +55,29 @@ print(b.dtype)
 print(b.astype('str'))#转化成字符串
 
 
+astype和dtype区别
+
+reshape重构
+np.random.randint(1,5,(16)).reshape(4,4)
+
+
+arrange安排
+np.arrange(1,15,2)#1-2范围3步长
+>>[1,3,5,7...]
+
+
+
+_______________________
+取数和索引
+1.切片索引
+a=np.arange(1,13).reshape(3,4)
+
+a[:2]#0和1行
+a[:,1:3]#取列
+ 
+ 
+2. 
+浅复制 深复制
+
+
+
