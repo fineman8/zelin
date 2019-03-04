@@ -1,0 +1,13 @@
+三大返回函数：
+  1.HttpResponse:
+      作用：传入一个内部字符串参数，然后传给浏览器
+       如：HttpResponse('ok')
+  2.render:
+      可接受三个参数，第一个是request参数，第二个是待渲染的html模板，第三个是context数据字典参数
+      作用：将数据填充进模板文件，然后返回给浏览器
+        如：return render(request,'index.html',context)
+  3.redirect:
+       可接受一个url参数
+       作用：浏览器跳转到该url
+        如：redirect('http://www.baidu.com')
+      
